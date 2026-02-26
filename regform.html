@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Reg Form</title>
+</head>
+<body>
+    <h3>New Registration Form</h3>
+    <form action="newuser.jsp" method="post">
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Full Name" required><br><br>
+        <input type="password" name="pwd" id="pwd" placeholder="Enter Password" required /><br><br>
+        <input type="email" name="mailid" id="mailid" placeholder="E-Mail ID" required /><br><br>
+        <input type="number" name="mno" id="mno" placeholder="Mobile" required /><br><br>
+        <label>Date of Birth</label><br>
+        <input type="date" name="dob" id="dob" required /><br><br>
+        <select name="branch" id="branch" required>
+            <option value="">--Select Branch--</option>
+            <option value="cse">CSE</option>
+            <option value="aiml">AI&amp;ML</option>
+        </select><br><br>
+        <label for="techskills">Technical Skills</label>&nbsp; 
+        <input type="checkbox" name="ts" value="c" />C &nbsp;
+        <input type="checkbox" name="ts" value="java" />JAVA &nbsp;
+        <input type="checkbox" name="ts" value="python" />Python &nbsp;<br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male"> Male &nbsp;
+        <input type="radio" name="gender" value="female"> Female &nbsp;<br><br>
+        <textarea name="address" id="address" placeholder="Enter Address"></textarea><br><br>
+        <button type="submit">Sign-Up</button>
+    </form>
+</body>
+</html>
